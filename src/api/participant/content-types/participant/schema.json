@@ -12,16 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "activity": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::activity.activity",
-      "inversedBy": "participants"
+    "name": {
+      "type": "string"
     },
-    "users_permissions_user": {
+    "activities": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
+      "relation": "manyToMany",
+      "target": "api::activity.activity",
       "inversedBy": "participants"
     }
   }
