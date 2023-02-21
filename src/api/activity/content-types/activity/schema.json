@@ -26,6 +26,18 @@
     },
     "closingDate": {
       "type": "datetime"
+    },
+    "type_selection": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type-selection.type-selection",
+      "inversedBy": "activities"
+    },
+    "participants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::participant.participant",
+      "mappedBy": "activity"
     }
   }
 }

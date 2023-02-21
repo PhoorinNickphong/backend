@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_selections",
+  "info": {
+    "singularName": "type-selection",
+    "pluralName": "type-selections",
+    "displayName": "TypeSelection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "activities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activity.activity",
+      "mappedBy": "type_selection"
+    }
+  }
+}
