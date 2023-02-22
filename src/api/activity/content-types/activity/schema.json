@@ -22,22 +22,28 @@
     },
     "StartEnd": {
       "type": "date",
-      "required": false
+      "required": true
     },
     "closingDate": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
-    "participants": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::participant.participant",
-      "mappedBy": "activities"
+    "NOParticipant": {
+      "type": "integer",
+      "min": 0,
+      "required": true
     },
-    "type_selection": {
+    "activity_registations": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::type-selection.type-selection",
-      "inversedBy": "activities"
+      "relation": "oneToMany",
+      "target": "api::activity-registation.activity-registation",
+      "mappedBy": "activity"
+    },
+    "TypeOfSelection": {
+      "type": "integer",
+      "required": true,
+      "max": 2,
+      "min": 1
     }
   }
 }
