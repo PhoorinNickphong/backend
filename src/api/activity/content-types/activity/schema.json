@@ -44,6 +44,12 @@
       "required": true,
       "max": 2,
       "min": 1
+    },
+    "catagory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::catagory.catagory",
+      "inversedBy": "activities"
     }
   }
 }
