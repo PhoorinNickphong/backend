@@ -18,12 +18,6 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "activity_registations"
     },
-    "activity": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::activity.activity",
-      "inversedBy": "activity_registations"
-    },
     "ConfirmStatus": {
       "type": "integer",
       "required": true,
