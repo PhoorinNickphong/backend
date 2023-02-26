@@ -12,17 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_user": {
+    "Register": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "activity_registations"
     },
     "ConfirmStatus": {
-      "type": "integer",
-      "required": true,
-      "max": 3,
-      "min": 1
+      "type": "enumeration",
+      "enum": [
+        "SignIn",
+        "AdminConfirm",
+        "AdminReject"
+      ],
+      "required": true
+    },
+    "activity": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::activity.activity",
+      "inversedBy": "activity_registations"
+    },
+    "mf": {
+      "type": "string"
     }
   }
 }

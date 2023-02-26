@@ -44,6 +44,26 @@
     },
     "Contact": {
       "type": "text"
+    },
+    "activity_registations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activity-registation.activity-registation",
+      "mappedBy": "activity"
+    },
+    "TypeOfSelection": {
+      "type": "enumeration",
+      "enum": [
+        "FirstCome",
+        "Candidate"
+      ],
+      "required": true
+    },
+    "catagory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::catagory.catagory",
+      "inversedBy": "activities"
     }
   }
 }

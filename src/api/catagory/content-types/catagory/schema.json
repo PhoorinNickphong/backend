@@ -4,7 +4,8 @@
   "info": {
     "singularName": "catagory",
     "pluralName": "catagories",
-    "displayName": "Catagory"
+    "displayName": "Catagory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,12 @@
     "title": {
       "type": "string",
       "required": true
+    },
+    "activities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activity.activity",
+      "mappedBy": "catagory"
     }
   }
 }
