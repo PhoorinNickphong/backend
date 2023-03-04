@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_type_type2s",
+  "info": {
+    "displayName": "Type2"
+  },
+  "options": {},
+  "attributes": {
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "Confirm": {
+      "type": "boolean"
+    }
+  }
+}

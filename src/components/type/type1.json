@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_type_type1s",
+  "info": {
+    "displayName": "Type1"
+  },
+  "options": {},
+  "attributes": {
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

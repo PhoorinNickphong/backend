@@ -44,6 +44,29 @@
     },
     "Contact": {
       "type": "text"
+    },
+    "catagories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::catagory.catagory",
+      "inversedBy": "activities"
+    },
+    "Typeregister": {
+      "type": "enumeration",
+      "enum": [
+        "Type 1",
+        "Type 2"
+      ]
+    },
+    "Type1": {
+      "type": "component",
+      "repeatable": true,
+      "component": "type.type1"
+    },
+    "Type2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "type.type2"
     }
   }
 }
