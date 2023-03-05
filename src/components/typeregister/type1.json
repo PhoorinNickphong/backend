@@ -1,7 +1,8 @@
 {
-  "collectionName": "components_type_type2s",
+  "collectionName": "components_type_type1s",
   "info": {
-    "displayName": "Type2"
+    "displayName": "First Come First Serve",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,9 +10,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user"
-    },
-    "Confirm": {
-      "type": "boolean"
     }
   }
 }

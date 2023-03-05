@@ -1,7 +1,8 @@
 {
-  "collectionName": "components_type_type1s",
+  "collectionName": "components_type_type2s",
   "info": {
-    "displayName": "Type1"
+    "displayName": "Candidate",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,6 +10,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user"
+    },
+    "Confirm": {
+      "type": "boolean"
     }
   }
 }

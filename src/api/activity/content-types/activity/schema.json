@@ -54,19 +54,19 @@
     "Typeregister": {
       "type": "enumeration",
       "enum": [
-        "Type 1",
-        "Type 2"
+        "First Come First Serve",
+        "Candidate"
       ]
     },
-    "Type1": {
+    "FirstComeFirstServe": {
       "type": "component",
       "repeatable": true,
-      "component": "type.type1"
+      "component": "typeregister.type1"
     },
-    "Type2": {
+    "Candidate": {
       "type": "component",
       "repeatable": true,
-      "component": "type.type2"
+      "component": "typeregister.type2"
     }
   }
 }
